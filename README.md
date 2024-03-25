@@ -154,7 +154,7 @@ podman login {{ registry-host }}  # a.r.r
 - Сценарий "Как найти нужный образ в registry?"
 Залогиниться браузером по адресу {{ registry-host }}, в поиске найти нужный образ и скопировать полное символьное имя (включая сетевой адрес хоста).
 
-- Сценарий "Как ...?"
+- Сценарий "Как загрузить образ и посмотреть как увеличилась утилизация файловой системы?"
 ```shell
 podman image pull {{ registry-host }}/{{ os-images-path }}/alpine:3.14  # a.r.r/ext-rbru-osimage-docker/alpine:3.14
 podman system df
