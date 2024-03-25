@@ -160,9 +160,9 @@ podman image pull {{ registry-host }}/{{ os-images-path }}/alpine:3.14  # a.r.r/
 podman system df
 ````
 
-- Сценарий "Как ...?"
+- Сценарий "Как инициализировать и запустить контейнер из образа?"
 ```shell
-podman container run hello
+podman container run hello # при использовании кастомного репозитория (вроде a.r.r) необходимо указывать полный путь вида {{ registry-host }}/{{ os-images-path }}/hello
 
 podman container run --name demo -it {{ registry-host }}/{{ os-images-path }}/alpine:3.14
 /# cat /etc/os-release
